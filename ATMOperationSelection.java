@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+class ATMOperationSelection
+{
+	public static void main(String[] args) 
+	{
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter the amount");
+		int amount = s.nextInt();
+		int AccNum = 123456;
+		int value;
+		do{
+		System.out.println("Press 1 for withdraw");
+		System.out.println("Press 2 for Deposit");
+		System.out.println("Press 3 for Balance"); 
+		System.out.println("Press 4 for exit");
+		value = s.nextInt();
+		switch(value){
+			case 1:
+				System.out.println("Enter the account number");
+				int AccNum1 = s.nextInt();
+				System.out.println("Enter the amount for withdrawl");
+				int wAmount = s.nextInt();
+				if(AccNum == Accnum1 && wAmount >= 0 && wAmount <= amount){
+					amount = amount - wAmount;
+					System.out.println(amount);
+				}else{
+					System.out.println("Insufficient fund");
+				}
+				break;
+				case 2:
+				System.out.println("Enter the deposit amount");
+				int dAmount = s.nextInt();
+				if(dAmount >= 0){
+				amount = amount + dAmount;
+				System.out.println(amount);
+				}else{System.out.println("Eneter the amount greater than 100");}
+				break;
+				case 3:
+				System.out.println("amount");
+				break;
+				case 4:
+				System.out.println("exit");
+				
+				break;
+		}
+		}while (value != 4);
+		
+		s.close();
+	}
+}

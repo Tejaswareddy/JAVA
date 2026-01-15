@@ -1,0 +1,12 @@
+class ticketBooking
+{
+	public static void main(String[] args) 
+	{
+		
+		boolean seats_avail = true;
+		boolean mem = true;
+		boolean valPromo = true;
+		String r = (seats_avail && mem || valPromo)?"Booking Allowed":"Booking Not Allowed";
+		System.out.println(r);
+	}
+}

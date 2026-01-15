@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class SkipExample {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter age: ");
+        int age = sc.nextInt();   // reads number, NOT newline
+
+        System.out.print("Enter name: ");
+        String name = sc.nextLine(); // reads leftover newline 
+
+        System.out.println("Age: " + age);
+        System.out.println("Name: " + name);
+
+        sc.close();
+    }
+}

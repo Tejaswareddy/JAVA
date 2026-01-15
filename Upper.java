@@ -1,0 +1,9 @@
+class Upper
+{
+	public static void main(String[] args) 
+	{
+		char c = 'a'; 
+		String r = (c>65 && c<90)?"Upper":"Lower";
+		System.out.println(r);
+	}
+}

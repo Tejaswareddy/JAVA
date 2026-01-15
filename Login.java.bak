@@ -1,0 +1,11 @@
+class Login 
+{
+	public static void main(String[] args) 
+	{
+		String User = "Teja";
+		String Pass = "154789";
+		boolean active = true;
+		String r = (User!=null && Pass!=null && active)?"Can Login":"CAnnot Login";
+		System.out.println(r);
+	}
+}

@@ -1,0 +1,11 @@
+class PlacementEligibility
+{
+	public static void main(String[] args) 
+	{
+		boolean active_backlogs = true;
+		float Cgpa = 7.0;
+		boolean InternShipExp = true;
+		String r = (active_backlogs && Cgpa>6.5 || InternShipExp)?"Eligible":"Not Eligible";
+		System.out.println(r);
+	}
+}

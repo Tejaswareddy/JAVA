@@ -1,0 +1,9 @@
+class AttendenceChecker 
+{
+	public static void main(String[] args) 
+	{
+		int Attendence = 78;boolean MedCer = false;boolean Fee = true;
+		String r = (Attendence >= 75 || MedCar && Fee)?"Can WRite":"Cannot Write";
+		System.out.println(r);
+	}
+}

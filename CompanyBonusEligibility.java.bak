@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class  CompanyBonusEligibility
+{
+	public static void main(String[] args) 
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the experience");
+		int emp_exp = s.nextInt();
+		System.out.println("Enter the employee rating");
+		int emp_rating = s.nextInt();
+		
+		if (emp_exp >= 5)
+		{
+			System.out.println("You are eligible for bonus");
+		}else if(emp_rating >= 4)
+		{
+			System.out.println("You are eligible for bonus");
+		}else{
+			System.out.println("You cannot get bonus");
+		}
+		
+		s.close();
+	}
+}

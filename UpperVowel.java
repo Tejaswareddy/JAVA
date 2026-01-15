@@ -1,0 +1,10 @@
+class UpperVowel
+{
+	public static void main(String[] args) 
+	{
+		char c = '1'; 
+		
+		String r = (c>='A' && c<='Z' || c=='A'|| c=='E'|| c=='I'|| c=='O'|| c=='U'  )?"UppVo":"Not";
+		System.out.println(r);
+	}
+}
